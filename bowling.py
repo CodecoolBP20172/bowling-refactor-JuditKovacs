@@ -21,6 +21,7 @@ def score(game):
         last = get_value(game[i])
         if not in_first_half:
             frame += 1
+
         if in_first_half == True:
             in_first_half = False
         else:
@@ -29,6 +30,7 @@ def score(game):
             in_first_half = True
             frame += 1
     return result
+
 
 def get_value(char):
     if char == '1' or char == '2' or char == '3' or \
